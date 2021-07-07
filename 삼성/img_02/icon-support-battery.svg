@@ -1,0 +1,8 @@
+<svg id="ic_갤럭시배터리_32px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="사각형_1721" data-name="사각형 1721" width="32" height="32" fill="#f2f2f2" opacity="0"/>
+  <g id="그룹_2730" data-name="그룹 2730" transform="translate(4 1)">
+    <path id="패스_1377" data-name="패스 1377" d="M432,153.434v-8.081a1.026,1.026,0,0,1,1.027-1.02h13.946a1.026,1.026,0,0,1,1.027,1.02v24.62A1.032,1.032,0,0,1,446.973,171H433.027A1.032,1.032,0,0,1,432,169.973v-5.9" transform="translate(-424 -141)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="패스_1378" data-name="패스 1378" d="M443.333,141.66v2.673h-6.666V141.66a.661.661,0,0,1,.66-.66h5.346A.657.657,0,0,1,443.333,141.66Z" transform="translate(-424 -141)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="패스_1379" data-name="패스 1379" d="M429.191,163.668,424,158.352l2.209-2.262,2.982,3.054,8.6-8.808L440,152.6Z" transform="translate(-424 -141)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

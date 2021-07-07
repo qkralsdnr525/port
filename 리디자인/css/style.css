@@ -1,0 +1,319 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+body{font-family: 'Noto Sans KR', sans-serif;}
+body{-ms-overflow-style:none; }
+body::-webkit-scrollbar { display:none; }
+/*skip메뉴*/
+#skip{z-index:4;position:relative;width:100%;height:auto;font-size:0;}
+#skip>li{width:100%;height:auto;font-size:0;}
+#skip>li>a{display:block;padding:0;font-size:0;text-align:center;color:#fff;background:#000;}
+#skip>li>a:focus{padding:20px;font-size:16px;}
+
+
+
+#warp{width:1920px; height: auto; }
+#header{width:100%; height:100px; background:#343436;}
+#content{width:1280px; height: 2450px; margin:0 auto;}
+#footer{width:100%; height: 328px; background: #343436; }
+
+/* 공통속성 */
+.container{width:100%; height:auto; /* background:rgba(0,0,0,.3) */}
+
+/* header */
+.logo{position:relative; left: 18%; top:10px;}
+.logo img{ width: 125px; height:80px; margin: 0 75px 0 0; }
+.login_Bar{text-align:center;}
+.login_Bar ul{position: relative; left:68%;  top:-100px}
+.login_Bar ul li{float:left; list-style:none; padding-right:20px; font-size: 14px;}
+.login_Bar ul li a{color: #fff; text-decoration:none;}
+.menu_Bar{text-align:center; color:#fff;}
+.menu_Bar a{color:#fff;}
+.menu_Bar>ul{position:relative; left:-2%; top:-45px; display: inline-block;}
+.menu_Bar>ul>li{float:left; list-style:none; color: #fff; padding-right:80px; font-size:20px;
+  font-weight: bold;}
+  
+ /*hover drop*/
+.menu_Bar .brand_drop_menu{position: absolute; left:-8%; z-index: 1; display:none;}
+.menu_Bar .brand_drop_menu ul{margin-top:30px;}
+.menu_Bar .brand_drop_menu ul>li{ padding-top: 30px;list-style:none; width:180px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 180px;}
+.menu_Bar .brand.active .brand_drop_menu{display: block;}
+.brand_drop_menu a:hover{color:#ddd;}
+.menu_Bar ul li a{color:#fff; text-decoration: none;}
+.menu_Bar .Menu_row_menu{position: absolute; left:10%;  z-index: 1; display:none;}
+.menu_Bar .Menu_row_menu ul{margin-top:30px;}
+.menu_Bar .Menu_row_menu ul>li{padding-top: 30px; list-style:none; width:180px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 180px;}
+.menu_Bar .Menu.active .Menu_row_menu{display: block;}
+.Menu_row_menu a:hover{color:#ddd;}
+.menu_Bar .Store_row_menu{position: absolute; left:28%;  z-index: 1; display:none;}
+.menu_Bar .Store_row_menu ul{margin-top:30px;}
+.menu_Bar .Store_row_menu ul>li{ padding-top: 30px; list-style:none; width:180px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 180px;}
+.menu_Bar .Store.active .Store_row_menu{display: block;}
+.Store_row_menu a:hover{color:#ddd;}
+.menu_Bar .Bnefit_row_menu{position: absolute; left:47%;  z-index: 1; display:none;}
+.menu_Bar .Bnefit_row_menu ul{margin-top:30px;}
+.menu_Bar .Bnefit_row_menu ul>li{opacity: .9; padding-top: 30px; list-style:none; width:180px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 180px;}
+.menu_Bar .Bnefit.active .Bnefit_row_menu{display: block;}
+.Bnefit_row_menu a:hover{color:#ddd;}
+.menu_Bar .Membership a{display: block;}
+.menu_Bar .Membership_row_menu{position: absolute; left:70%;  z-index: 1; display:none;}
+.menu_Bar .Membership_row_menu ul{margin-top:30px;}
+.menu_Bar .Membership_row_menu ul>li{ padding-top: 30px; list-style:none; width:180px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 180px;}
+.menu_Bar .Membership.active .Membership_row_menu{display: block;}
+.Membership_row_menu a:hover{color:#ddd;}
+
+/*cotent imgslede*/
+.slide_button_left{position:relative; left:-10%;}
+.slide_button_left img{width: 49px; height:49px;}
+.slide_button_right{position:relative; top:15%; left:13%; transform:rotate(180deg);}
+.slide_button_right img{width: 49px; height:49px;}
+.hidden{display: block; overflow: hidden; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+.slide{width: 1280px; height: 460px; background: #ddd; position: relative; left:-15%; overflow: hidden;}
+.slide>ul.slideUl{width: 1280px; height: 460px; position: relative; top: 0; left: 0;}
+.slide>ul.slideUl>li{height: 460px; width: 1280px; position: absolute; left: 0; top: 0;}
+.slide>ul.slideUl>.slide01{background:url(../img/main_vi_202104_1.jpg) 50% 0 no-repeat; left: 0;  background-size:1280px 460px; background-size: 1280px 460px}
+.slide>ul.slideUl>.slide02{background:url(../img/main_vi_202104_2.jpg) no-repeat; left: 100%; background-size: 1280px 460px }
+.slide>ul.slideUl>.slide03{background:url(../img/main_vi_20190225.jpg) 50% 0 no-repeat; left: 200%; background-size:1280px 460px;}
+.btnImg{position: relative; top: -450px; width: 100%;}
+.btnImg .prev{position: absolute; left: 20px; top:200px;}
+.btnImg .next{position: absolute; right: 20px; top:200px;}
+.buttonList:after{content:""; display: block; clear: both;}
+.buttonList>li{  background: url(../img/btnVisual.png) no-repeat 0 -16px; width: 14px; height: 15px; overflow: hidden; margin: 0 5px; cursor: pointer; position: relative; top: -50px; left: 50%; float: left;}
+.buttonList li.on{background-position: 0 0}
+.buttonList li a{display: block; }
+
+
+/*content*/
+.cont_1{position:relative; left:15%;}
+.cont_2{padding-top:150px; background:url(../img/vipshistory.jpg) center no-repeat;	background-size: 1280px 400px;}
+.cont_2 .text_Box1{position:relative; top:-90px; left:5%;}
+.cont_2 .img_slide_Box1 img{opacity:0.2;}	
+.cont_2 h1{color: #fff; font-size:48px; padding-bottom:50px;}
+.cont_2 p{color: #fff; font-size:20px; line-height:40px;}
+.cont_3{padding-top:550px; width:1280px; height:400px; position:relative; top:-550px; left:4.5%;}
+.cont_3 .img_slide02 .text_Box2{width: 390px; height: 459.8px; background:#fff;}
+.cont_3 .img_slide02 ul li{float:left; list-style:none; width: 386.7px; }
+.cont_3 .img_slide02 ul li a{text-decoration:none; color:#000; font-size:40px;}
+.cont_3 .text_Box2 h2{font-size:48px; padding-left:20px; padding-bottom:40px; padding-top:40px; font-weight:bold;}
+.cont_3 .text_Box2 p{font-size:20px; padding-left:22px; line-height:40px;}
+.cont_3 .img_slide02 img{width: 386.7px; height: 459.8px;}
+.cont_3 .btnImg01 img{position:relative; top:203px; width:100%;}
+.cont_3 .btnImg01 .prev{position:absolute; top:750px; left:-53%;}
+.cont_3 .btnImg01 .next{position:absolute; top:750px; left:44%; transform:rotate(180deg)}
+.cont_4{width:1100px; height:410px; background:#fff; position: relative; top:-420px; left:6%; text-align:center;}
+.cont_4 h3{font-size:60px; line-height:55px;}
+.cont_4 h4{font-size:30px; padding-bottom: 30px;}
+.cont_4 p{font-size:14px;}
+.cont_4 a{text-decoration:none; color: #000;}
+.cont_4 .textBox3{position:relative; left:-20%;}
+.cont_4 img{width:410px; height:410px; position: relative; top: -352px; left: 31.5%;}
+.cont_5 {width:1280px; height: 480px; background: url(../img/benefit-1.png)no-repeat; position:relative; top:-370px;}
+.cont_5 ul{text-align:center;}
+.cont_5 ul li{list-style:none; float: left; padding-top:150px;}
+.cont_5 ul li i{font-family:FontAwesome;}
+.cont_5 ul li a{text-decoration: none; color: #fff; }
+.cont_5 ul li a h4{font-size:27px; padding-top:50px;}
+.cont_5 ul li a p{font-size:16px;}
+.cont_5 .text_li1{padding-left:179px;}
+.cont_5 .text_li2{padding-left:205px;padding-right:200px;}
+.cont_5 .text_li3{padding-right:179px;}
+
+
+/* footer */
+.logo_row img{width: 125px; height:80px; position: relative; left: -64%; top:15px; display: flex;}
+.logo_row ul{float: left;}
+.logo_row ul>li{padding-right:40px; float: left; position: relative; left: 80%; top:-170px}
+.logo_row ul>li>a{color:#fff; }
+.footer_text{position: relative; top:150px; left: -50%; color:#fff; display: none;}
+.footer_text p{display: flex;}
+.footer_text span{padding-right: 20px}
+
+
+
+/* 미디어쿼리 */
+@media screen and (max-width:1600px) {
+    .logo{position:relative; left:6%;}
+    .menu_Bar li{position:relative;}
+	.logo_row{position:relative; left: -17%;}
+	.footer_text{position:relative; left: 20%;}
+	
+}
+@media screen and (max-width:1400px) {
+    .cont_1{position:relative; left:15%;}
+	.slide{width: 1250px; height: 460px; background: #ddd; position: relative; left:-15%; overflow: hidden;}
+	.logo_row img{width: 125px; height:80px; position:relative; left:-45%; top: -200px;}
+	.logo_row ul{color:#fff;float: left; position: relative; top:-160px; left:40%;}
+	.logo_row ul li{color:#fff; float: left;}
+	.logo_row ul li a{color:#fff; padding-right: 40px;  font-size:16px;}
+	.footer_text p{color:#fff; padding-right:60px; padding-bottom:10px;}
+	.footer_text {float: left; position:relative; left:10%; top:-150px;}
+	.footer_text span{padding: 0 20px 0 100px;}
+	.menu_Bar>ul>li{float:left; list-style:none; color: #fff; padding-right:80px; font-size:18px; font-weight: bold;}	
+	.menu_Bar .brand_drop_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .brand_drop_menu ul>li{ padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Menu_row_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .Menu_row_menu ul>li{ padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Store_row_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .Store_row_menu ul>li{padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Bnefit_row_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .Bnefit_row_menu ul>li{padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Membership_row_menu{position: absolute; left:-20%; z-index: 1; display:none;}
+	.menu_Bar .Membership_row_menu ul>li{padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+}
+@media screen (min-width:1081px)and (max-width:1250px) {
+    .logo{position:relative; left:0%;}
+	.menu_Bar li{position:relative; }
+	.footer_text{margin-top:50px; margin-left:340px; width:1250px;}
+	.slide{width: 1150px; height: 460px; background: #ddd; position: relative; left:-15%; overflow: hidden;}
+	.footer_text {float: left; position:relative; left:-15%; top:-200px;}
+	.footer_text span{padding: 0 20px 0 60px;}
+	.menu_Bar>ul>li{float:left; list-style:none; color: #fff; padding-right:80px; font-size:18px; font-weight: bold;}	
+	.menu_Bar .brand_drop_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .brand_drop_menu ul>li{ padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Menu_row_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .Menu_row_menu ul>li{ padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Store_row_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .Store_row_menu ul>li{padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Bnefit_row_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .Bnefit_row_menu ul>li{padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Membership_row_menu{position: absolute; left:-20%; z-index: 1; display:none;}
+	.menu_Bar .Membership_row_menu ul>li{padding-top: 30px; list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+}
+@media screen and (max-width:1080px) {
+    .logo{position:relative; left:2%;}
+	.menu_Bar li{position:relative; left:5%;}
+	.menu_Bar li a{font-size:18px;}
+	.login_Bar li{position:relative; left:5%;}
+	.login_Bar li a{font-size:14px;}
+	.slide{width: 1280px; height: 460px; background: #ddd; position: relative; left:-32%; overflow: hidden;}
+	.cont_2 .text_Box1 h1{font-size: 36px;}
+	.cont_2 .text_Box1 p{font-size:18px;}
+	.img_slide_Box1{position:relative; left: -10%;}
+	.img_slide_Box2{position:relative; left: -18%;}
+	.cont_3 .text_Box2{position:relative; left:-9%;}
+	.cont_3 .text_Box2 h2{font-size:38px;}
+	.cont_3 .text_Box2 p{font-size:18px;}
+	.btnImg01{display:none;}
+	.cont_2{background-size:1080px 400px; position:relative; left:-10%;}
+	.cont_2 .text_Box1{position:relative; left:12%;}
+	.cont_4{position:relative; left:-10%}
+	.cont_5{background-size:1080px 480px; position:relative; left:-2%;}
+	.cont_5 ul li{position:relative; left:-6%;}
+	.cont_5 ul li a h4{font-size:24px; padding-top:50px;}
+	.cont_5 ul li a p{font-size:14px;}
+	.logo_row img{width: 125px; height:80px; position:relative; left:-50%; top: -150px;}
+	.logo_row ul{color:#fff;float: left; position: relative; top:-120px; left:40%;}
+	.logo_row ul li{color:#fff; float: left;}
+	.logo_row ul li a{color:#fff; padding-right: 40px;  font-size:14px;}
+	.footer_text p{color:#fff; padding-right:50px; padding-bottom:10px;}
+	.footer_text {float: left; position:relative; left:-20%; top:-150px;}
+	.footer_text span{padding: 0 20px 0 40px;}
+	
+}
+@media screen and (max-width:960px) {
+    .logo{position:relative; left:0%;}
+	.menu_Bar li{position:relative; left:20%;}
+	.menu_Bar li a{font-size:18px;}
+	.slide{width: 100%; height: 460px; background: #ddd; position: relative; left:-34%; overflow: hidden;}
+}
+@media screen and (max-width:760px) {
+    .logo{position:relative; top:20px;}
+    .logo img{width: 105px; height:60px;}
+	.menu_Bar li{position:relative; left:20%; top:15px;}
+	.menu_Bar li a{font-size:16px;}
+	.login_Bar ul li{float:left; list-style:none; padding-right:20px; font-size: 12px;}
+	.logo_row{position:relative; left:-40%;}
+	.logo_row img{width: 105px; height:60px; position:relative; left:340px; top:30px;}
+	.logo_row ul li{float:left; padding-right:15px; font-size:12px; position:relative; left:480px; top:-20px;}
+	.menu_Bar .brand_drop_menu ul{margin-top:10px;}
+	.menu_Bar .Menu_row_menu ul{margin-top:10px;}
+	.menu_Bar .Store_row_menu ul{margin-top:10px;}
+	.menu_Bar .Bnefit_row_menu ul{margin-top:10px;}
+	.menu_Bar .Membership_row_menu ul{margin-top:10px;}
+	.menu_Bar>ul>li{float:left; list-style:none; color: #fff; padding-right:60px; font-size:12px; font-weight: bold;}	
+	.menu_Bar .brand_drop_menu{position: absolute; left:-80%; z-index: 1; display:none;}
+	.menu_Bar .brand_drop_menu ul>li{ padding-top: 30px;list-style:none; width:130px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Menu_row_menu{position: absolute; left:-85%; z-index: 1; display:none;}
+	.menu_Bar .Menu_row_menu ul>li{ padding-top: 30px;list-style:none; width:130px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Store_row_menu{position: absolute; left:-85%; z-index: 1; display:none;}
+	.menu_Bar .Store_row_menu ul>li{padding-top: 30px;list-style:none; width:130px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Bnefit_row_menu{position: absolute; left:-75%; z-index: 1; display:none;}
+	.menu_Bar .Bnefit_row_menu ul>li{padding-top: 30px;list-style:none; width:130px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Membership_row_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .Membership_row_menu ul>li{padding-top: 30px;list-style:none; width:130px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.slide{width: 760px; height: 460px; background: #ddd; position: relative; left:-31.5%; overflow: hidden;}
+	.slide>ul.slideUl>.slide01{background:url(../img/main_vi_202104_1.jpg) 50% 0 no-repeat; left: 0;  background-size:760px 460px; background-size: 1280px 460px}
+	.slide>ul.slideUl>.slide02{background:url(../img/main_vi_202104_2.jpg) 50% 0 no-repeat; left: 0;  background-size:760px 460px; background-size: 1280px 460px}
+	.slide>ul.slideUl>.slide03{background:url(../img/main_vi_20190225.jpg) 50% 0 no-repeat; left: 0;  background-size:760px 460px; background-size: 1280px 460px}
+	.cont_2{background-size: 760px 400px; position:relative; left:-20%;}
+	.cont_2 .text_Box1{position:relative; left:22%;}
+	.cont_2 .text_Box1 h1{font-size:36px;}
+	.cont_2 .text_Box1 p{font-size:16px;}
+	.cont_3 .img_slide_Box1 img{width:300px;}
+	.cont_3 .img_slide_Box2 img{width:300px; position:relative; left:-40%;}
+	.cont_3 .text_Box2{position:relative; left:-18%;}
+	.cont_3 .text_Box2 h2{font-size:36px;}
+	.cont_3 .text_Box2 p{font-size:16px;}
+	.cont_4 h3{font-size:48px;}
+	.cont_4 h4{font-size:24px;}
+	.cont_4 p{font-size:12px;}
+	.cont_4 img{width:300px; position:relative; left:10%;}
+	.cont_5{background-size:760px 480px; position:relative; left:-2%;}
+	.cont_5 ul li{position:relative; left:-6%;}
+	.cont_5 ul li a h4{font-size:18px; padding-top:50px;}
+	.cont_5 ul li a p{font-size:12px;}
+	.cont_5 .text_li1{padding-left:179px;}
+	.cont_5 .text_li2{padding-left:80px;padding-right:30px;}
+	.cont_5 .text_li3{padding-right:179px;}
+	.logo_row img{display:none;}
+	.logo_row ul{color:#fff;float: left; position: relative; top:-100px; left:-19%;}
+	.logo_row ul li{color:#fff; float: left;}
+	.logo_row ul li a{color:#fff; padding-right: 10px;  font-size:14px;}
+	.footer_text p{color:#fff; padding-right:60px; padding-bottom:13px; font-size:11px;}
+	.footer_text {float: left; position:relative; left:-38%; top:-130px;}
+	.footer_text span{padding: 0 10px 0 10px;}
+	
+}
+
+@media screen and (max-width:460px) {
+	.logo img{display:none;}
+	.menu_Bar>ul{position:relative; left:-15%; top:20px; display: inline-block;}
+	.menu_Bar>ul>li{float:left; list-style:none; color: #fff; padding-right:28px; font-size:8px; font-weight: bold;}
+	.slide{width: 460px; height: 460px; background: #ddd; position: relative; left:-15%; overflow: hidden;}	
+	.menu_Bar .brand_drop_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .brand_drop_menu ul>li{ padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Menu_row_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .Menu_row_menu ul>li{ padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Store_row_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .Store_row_menu ul>li{padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Bnefit_row_menu{position: absolute; left:-40%; z-index: 1; display:none;}
+	.menu_Bar .Bnefit_row_menu ul>li{padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.menu_Bar .Membership_row_menu{position: absolute; left:-20%; z-index: 1; display:none;}
+	.menu_Bar .Membership_row_menu ul>li{padding-top: 30px;list-style:none; width:160px; height: 80px; opacity: .9; background: #343436; z-index: 1; min-width: 160px;}
+	.cont_2{background-size: 460px 400px; position:relative; left:-32%;}
+	.cont_2 .text_Box1{position:relative; left:34%;}
+	.cont_2 .text_Box1 h1{font-size:18px; }
+	.cont_2 .text_Box1 p{font-size:12px;}
+	.cont_3 .img_slide_Box1 img{width:150px; position:relative; left:10%;}
+	.cont_3 .img_slide_Box2 img{width:150px; position:relative; left:-75%;}
+	.cont_3 .text_Box2{position:relative; left:-25%;}
+	.cont_3 .text_Box2 h2{font-size:24px;}
+	.cont_3 .text_Box2 p{font-size:12px;}
+	.cont_4 h3{font-size:36px; position:relative; left:-5%;}
+	.cont_4 h4{font-size:20px;position:relative; left:-5%;}
+	.cont_4 p{font-size:8px; position:relative; left:-5%;}
+	.cont_4 img{width:240px; position:relative; left:-1%;}
+	.cont_5{background-size:460px 480px; position:relative; left:0%;}
+	.cont_5 ul li{position:relative; left:-12%;}
+	.cont_5 ul li a h4{font-size:14px; padding-top:50px;}
+	.cont_5 ul li a p{font-size:8px;}
+	.cont_5 .text_li1{padding-left:150px;}
+	.cont_5 .text_li2{padding-left:50px;padding-right:30px;}
+	.cont_5 .text_li3{padding-right:150px;}
+	.logo_row img{display:none;}
+	.logo_row ul{color:#fff;float: left; position: relative; top:-60px; left:-60%;}
+	.logo_row ul li{color:#fff; float: left;}
+	.logo_row ul li a{color:#fff; padding-right: 1px;  font-size:8px;}
+	.footer_text p{color:#fff; padding-right:40px; padding-bottom:13px; font-size:8px;}
+	.footer_text{float: left; position:relative; left:-72%; top:-130px;}
+	.footer_text span{padding: 0 2px 0 2px;}
+}

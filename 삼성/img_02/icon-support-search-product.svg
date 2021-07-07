@@ -1,0 +1,10 @@
+<svg id="ic_제품_정보_찾기_32px" data-name="ic_제품 정보 찾기_32px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="사각형_1723" data-name="사각형 1723" width="32" height="32" fill="#f2f2f2" opacity="0"/>
+  <g id="그룹_2699" data-name="그룹 2699" transform="translate(6 3)">
+    <path id="패스_1340" data-name="패스 1340" d="M5.514-136.454v24.908A1.046,1.046,0,0,0,6.56-110.5H25.44a1.046,1.046,0,0,0,1.046-1.046v-20.589L21.2-137.421,6.566-137.5A1.046,1.046,0,0,0,5.514-136.454Z" transform="translate(-5.514 137.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="선_460" data-name="선 460" x2="10.36" transform="translate(5.218 11.865)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="선_461" data-name="선 461" x2="10.36" transform="translate(5.218 16.481)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="선_462" data-name="선 462" x2="10.36" transform="translate(5.218 21.096)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="패스_1341" data-name="패스 1341" d="M20.958-137.346v5.619h5.491" transform="translate(-5.514 137.5)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

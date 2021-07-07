@@ -1,0 +1,14 @@
+<svg id="ic_온라인_상담_32px" data-name="ic_온라인 상담_32px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="사각형_1724" data-name="사각형 1724" width="32" height="32" fill="#f2f2f2" opacity="0"/>
+  <g id="그룹_2735" data-name="그룹 2735" transform="translate(1 5)">
+    <g id="그룹_2733" data-name="그룹 2733">
+      <rect id="사각형_1775" data-name="사각형 1775" width="29.792" height="17.875" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="선_480" data-name="선 480" y2="3.341" transform="translate(14.896 18.145)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="선_481" data-name="선 481" x2="17.64" transform="translate(6.076 21.478)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g id="그룹_2734" data-name="그룹 2734" transform="translate(10.261 4.16)">
+      <path id="패스_1384" data-name="패스 1384" d="M18.647,291.959a28.944,28.944,0,0,0-1.177,4.073c0,.735,3.142.349,3.142-2.258A4.351,4.351,0,0,0,16,289.417c-2.965,0-4.635,2.75-4.635,4.955a4.591,4.591,0,0,0,4.635,4.6,4.825,4.825,0,0,0,4.123-1.911" transform="translate(-11.365 -289.417)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="패스_1385" data-name="패스 1385" d="M17.682,294.837a2.026,2.026,0,0,1-2.485,1.536,1.9,1.9,0,0,1-1.307-2.631,2.191,2.191,0,0,1,2.55-1.715A2.189,2.189,0,0,1,17.682,294.837Z" transform="translate(-11.365 -289.417)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

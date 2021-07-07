@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="ic_reading" transform="translate(-1297 -231)">
+    <g id="사각형_924" data-name="사각형 924" transform="translate(1297 231)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="40" height="40" stroke="none"/>
+      <rect x="0.5" y="0.5" width="39" height="39" fill="none"/>
+    </g>
+    <path id="패스_690" data-name="패스 690" d="M598.94,218a13.018,13.018,0,0,0-13,13c0,6.6,10.407,20.907,11.594,22.515a1.751,1.751,0,0,0,2.82,0c1.187-1.608,11.591-15.916,11.591-22.515A13.016,13.016,0,0,0,598.94,218Zm.219,18.117a4.675,4.675,0,1,1,4.675-4.675A4.677,4.677,0,0,1,599.159,236.117Z" transform="translate(718.219 15.072)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

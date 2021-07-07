@@ -1,0 +1,26 @@
+<svg id="ic_FAQ_32px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="사각형_1719" data-name="사각형 1719" width="32" height="32" fill="#f2f2f2" opacity="0"/>
+  <g id="그룹_2727" data-name="그룹 2727" transform="translate(1 2)">
+    <circle id="타원_170" data-name="타원 170" cx="4.678" cy="4.678" r="4.678" transform="translate(10.32 10.92)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <g id="그룹_2722" data-name="그룹 2722" transform="translate(11.656)">
+      <circle id="타원_171" data-name="타원 171" cx="3.342" cy="3.342" r="3.342" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="선_475" data-name="선 475" y1="4.237" transform="translate(3.342 6.683)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g id="그룹_2723" data-name="그룹 2723" transform="translate(0 8.468)">
+      <circle id="타원_172" data-name="타원 172" cx="3.342" cy="3.342" r="3.342" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="선_476" data-name="선 476" x1="4.029" y1="1.31" transform="translate(6.52 4.375)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g id="그룹_2724" data-name="그룹 2724" transform="translate(4.45 20.277)">
+      <circle id="타원_173" data-name="타원 173" cx="3.342" cy="3.342" r="3.342" transform="translate(0 1.894)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="선_477" data-name="선 477" x1="1.841" y2="2.533" transform="translate(5.306)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g id="그룹_2725" data-name="그룹 2725" transform="translate(18.582 20.535)">
+      <circle id="타원_174" data-name="타원 174" cx="3.342" cy="3.342" r="3.342" transform="translate(0.275 1.64)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="선_478" data-name="선 478" x2="1.654" y2="2.278" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+    <g id="그룹_2726" data-name="그룹 2726" transform="translate(21.475 8.475)">
+      <circle id="타원_175" data-name="타원 175" cx="3.342" cy="3.342" r="3.342" transform="translate(1.84)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <line id="선_479" data-name="선 479" y1="0.65" x2="2.003" transform="translate(0 4.373)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

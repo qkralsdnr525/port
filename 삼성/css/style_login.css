@@ -1,0 +1,40 @@
+*{margin: 0; padding: 0;}
+
+#wrap{width: 100%; height: auto;}
+#header{width:100%; height:90px; border-bottom: 1px solid #d9d9d9;}
+#content{width:100%; height:702px; background:rgba(0,0,0,.1)}
+#footer{ width:100%; height: 176px; background:rgba(0,0,0,.1)}
+/* 공통속성 */
+.container{width:1116px; height:inherit; /* background: rgba(0,0,0,.3); */  margin:0 auto;}
+a{text-decoration:none;}
+/* header */
+.header_top{width: 100%; height: 90px;  }
+.header_top img{ margin-top:35px;}
+
+/* content */
+.login_Box{padding-top:43px;}
+.login_Box1{margin:0 auto;  width: 494px; height:550px; border: 1px solid #d9d9d9; padding:60px 72px 48px 72px; border-radius:25px; background:#fff;}
+.login_Box1 h1{text-align:center; margin-bottom: 35px; font-size:39px; color:#0072de;}
+.login_Box1 .textBox li input{text-indent: 20px; border:none; border-bottom:1px solid #8a8a7b; width:452px; height:36px; font-size:16px; outline:none; margin-top:5px; color: #9b9b8c;}
+.login_Box1 ul{}
+.login_Box1 ul li{list-style:none;}
+.login_Box1  p{float:left}
+.login_Box1 .cont_2{padding:14px 0 14xp;}
+.id_remember{margin-top:20px;}
+.id_remember button{float:left;border:1px solid #9b9b8c; width:18px; height:18px; border-radius:50%;}
+.id_remember a{padding-left:10px; color:#000; font-size:15px; }
+.login_Box1 .login_bar{padding:72px 0 30px 0; text-align:center;}
+.login_Box1 .login_bar button{ font-size:17px; width: 280px; height:44px; border-radius: 15px; background:#EDEDED;border:1px solid #EDEDED;}
+.login_Box1 .sign { position:relative; left: 23%; color:#000;}
+.login_Box1 .sign ul li{padding-bottom: 10px; text-align:left; text-decoration:underline;}
+.login_Box1 .sign ul li a{color:#000; font-size:15px;}
+.google_button{text-align:center; margin-top:30px;}
+.google_button button{font-size:15px; background:#0072DE; border: 1px solid #0072DE;  border-radius: 15px; width:280px; height:44px;}
+.login_Box1 .googlelog a{position:relative; top:10px; font-size:15px; text-decoration:none; color: #fff;}
+.login_Box1 .Glogo{float:left; width: 44px; height:44px;}
+
+.footer_Box01 li{float:left; list-style:none;  margin-top:130px;}
+.footer_Box01 a{text-decoration:none; color:#000; font-size:11px; padding: 2px 15px; }
+.footer_Box01 .bold{font-weight:bold;}
+.footer_Box01 img{float:right; width:201px; height:16px;margin-top:100px;}
+.footer_Box01 p{float:right; font-size:12px; color:#888888;margin-top:130px; position:relative; left:18%;}

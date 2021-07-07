@@ -1,0 +1,9 @@
+<svg id="ic_윈도우업데이트_32px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="사각형_1708" data-name="사각형 1708" width="32" height="32" fill="#f2f2f2" opacity="0"/>
+  <g id="그룹_2701" data-name="그룹 2701" transform="translate(3 3)">
+    <path id="패스_1346" data-name="패스 1346" d="M152.588,5.184v9.2H142.552V6.753Z" transform="translate(-142.552 -2.552)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="패스_1347" data-name="패스 1347" d="M152.588,16.96v9.856l-10.036-1.569V16.96Z" transform="translate(-142.552 -2.552)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="패스_1348" data-name="패스 1348" d="M169.448,2.552V14.379H155.163v-9.6Z" transform="translate(-142.552 -2.552)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="패스_1349" data-name="패스 1349" d="M169.448,16.96V29.448l-14.286-2.23V16.96Z" transform="translate(-142.552 -2.552)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

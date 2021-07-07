@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+body{margin: 0; padding: 0;}
+$red: #fe0000;
+$yellow: #ffd000;
+$bkgreen: #1e3829;
+$white: #fff;
+$gray: #222222;
+$black: #000;
+$wgray:#808080;
+$fs40:40px;
+$fs20:20px;
+$fs18:18px;
+$fs16:16px;
+$fs13:13px;
+$pd15:5px 15px;
+
+.container{width:1170px; height: inherit; background: grba(0,0,0,.4); margin: 0 auto;}
+
+@mixin cont2_p {
+    p{padding: 24px 30px; font-size: $fs18; font-weight: bold;}
+}
+@mixin cont2_img {
+    img{border-radius: 5px 5px 0 0;}
+}
+
+#header{width:100%; height: 140px; text-align: center; border-bottom: 1px solid $wgray; box-sizing: border-box; background: $white;position: fixed; top: 0; left: 0; right: 0;
+    .logo{
+        float: left; margin-top: 25px;
+    }
+    .menu-top > li{
+         float: left;  margin-right: 85px; position: relative; left: 5%; margin-top: 50px;
+         &:hover{border-bottom: 4px solid $yellow;}
+        >a{font-size: $fs20; font-weight: bold;
+        }
+        >ul{
+            width:152px; height: 300px; position: absolute; left:12%; top:100px; text-align: left; z-index: 0;
+            >li{
+                margin-bottom: 30px; font-size: $fs16; display: none;
+            a{
+                color:$wgray;
+                    &:hover{color:$black; text-decoration: underline;}
+                } 
+            }
+        }
+    }
+    .right-menu > li{
+        float:left; margin-top: 50px; margin-right: 15px; position: relative; left: 5%; 
+        .red{border: 1px solid $red; font-size: $fs13; background: $red; padding: $pd15; border-radius: 15px;}
+        .yellow{border: 1px solid $yellow; font-size: $fs13; background: $yellow;  padding: $pd15; border-radius: 15px;}
+        .green{border: 1px solid $bkgreen; font-size: $fs13; background: $bkgreen;  padding: 5px 25px; border-radius: 15px;}
+        >a{color:$white;}
+    }
+    .search{position: relative; left: -8px; top:40px}
+}
+#content1{ margin-top: 140px;
+    html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+        z-index: -999;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+}
+
+#content2{
+    h1{font-size: $fs40; font-weight: bold; padding-top: 30px; margin-bottom: 60px;}
+    .cont2-top>li{ 
+        width:366px; height: 438px; float: left; margin: 0 15px 20px 0; border: 1px solid $white; border-radius: 5px; box-shadow: 0 2px 3px;
+        @include cont2_p;
+        @include  cont2_img;
+    }
+    .cont2-row>li{ width:366px; height: 438px; float: left; margin-right:10px; margin: 0 15px 20px 0; border: 1px solid $white; border-radius: 5px; box-shadow: 0 2px 3px;
+        @include cont2_p;
+        @include  cont2_img;}
+    button{position: relative; left: 45%; background: $white; cursor: pointer;}
+    .hide_btn {display: none;
+        button{
+            background: $white; position: relative; left: 45%; cursor: pointer;
+        }
+    
+}
+    .hide01>li{ width:366px; height: 438px; float: left; margin-right:10px; margin: 0 15px 20px 0; border: 1px solid $white; border-radius: 5px; box-shadow: 0 2px 3px;
+        @include cont2_p;
+        @include  cont2_img;
+    }
+    .hide02>li{ 
+        width:366px; height: 438px; float: left; margin-right:10px; margin: 0 15px 20px 0; border: 1px solid $white; border-radius: 5px; box-shadow: 0 2px 3px;
+        @include cont2_p;
+        @include  cont2_img;
+        }
+    .hide03>li{ 
+            width:366px; height: 438px; float: left; margin-right:10px; margin: 0 15px 20px 0; border: 1px solid $white; border-radius: 5px; box-shadow: 0 2px 3px;
+            @include cont2_p;
+        @include  cont2_img;
+    }
+    .hide04>li{ 
+        width:366px; height: 438px; float: left; margin-right:10px; margin: 0 15px 20px 0; border: 1px solid $white; border-radius: 5px; box-shadow: 0 2px 3px;
+        @include cont2_p;
+        @include  cont2_img;
+    }
+    .hide05>li{ 
+        width:366px; height: 438px; float: left; margin-right:10px; margin: 0 15px 20px 0; border: 1px solid $white; border-radius: 5px; box-shadow: 0 2px 3px;
+        @include cont2_p;
+        @include  cont2_img;
+    }
+          
+}
+#footer{
+    width:100%; height: 300px;  clear: both; background: #292929; margin: 0 auto;
+    .left_li{float: left; padding: 45px 30px 55px 0; font-size: 14px; 
+        li{
+            padding-bottom: 10px;
+            a{color:$white;}
+        }
+        .yellowf{color:#fffc48;}
+    }
+    .footer_text{ padding: 40px;
+        p{color:$wgray; padding: 5px; font-size: 14px; }
+    }
+    .footer_sns {position: relative; top:-200px; left:60%;
+        i{color:$white;  font-size: 40px; padding-right: 10px;}
+        .kakao img{width:40px; height: 40px; background: $white;border-radius:50%; margin-right: 10px;}
+        img{width:100px; height: 67px;}
+    }
+}
+
+
+.fix_logo {position: fixed; bottom: 30px; right:12%; text-align: center;
+    img{width: 110px; height: 113px;}
+    a{font-size: 36px; font-weight: bold; letter-spacing: 2px; 
+        p{border-bottom:1px solid $black; font-size: 14px; padding: 5px; margin: 45px 0 55px 0;}
+    }
+}
+

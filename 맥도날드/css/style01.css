@@ -1,0 +1,7 @@
+body{margin: 0; padding: 0;}
+.video-frame
+.video-frame video{
+    position: fixed;
+    width: 3000px;
+    min-height: 100%;
+}

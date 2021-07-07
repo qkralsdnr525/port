@@ -1,0 +1,12 @@
+<svg id="ic_뉴스_공지사항_32px" data-name="ic_뉴스&amp;공지사항_32px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="사각형_1710" data-name="사각형 1710" width="32" height="32" fill="#f2f2f2" opacity="0"/>
+  <g id="그룹_2742" data-name="그룹 2742" transform="translate(3 2)">
+    <path id="패스_1390" data-name="패스 1390" d="M23.488,27.2V4.212A1.768,1.768,0,0,0,21.72,2.444H4.039A1.769,1.769,0,0,0,2.271,4.212V26.979a2.576,2.576,0,0,0,2.576,2.577h21A2.358,2.358,0,0,1,23.488,27.2Z" transform="translate(-2.271 -2.444)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="패스_1391" data-name="패스 1391" d="M23.488,10.106h4.473A1.768,1.768,0,0,1,29.714,12.1L27.691,27.783s-.311,1.773-1.845,1.773" transform="translate(-2.271 -2.444)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <rect id="사각형_1776" data-name="사각형 1776" width="15.324" height="7.073" transform="translate(2.924 3.474)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="선_483" data-name="선 483" x2="15.324" transform="translate(2.924 14.36)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="선_484" data-name="선 484" x2="15.324" transform="translate(2.924 17.371)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="선_485" data-name="선 485" x2="15.324" transform="translate(2.924 20.382)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="선_486" data-name="선 486" x2="15.324" transform="translate(2.924 23.392)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>

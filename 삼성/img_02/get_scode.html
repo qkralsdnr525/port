@@ -1,0 +1,39 @@
+
+<!-- saved from url=(0070)https://image.cauly.co.kr/websdk/common/lasted/template/get_scode.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script>
+	(function(){
+		var scode = "";
+		var type = "";
+		var getCookie = function(key) {
+			try{
+				if ( !! document.cookie){
+					var name = key + "=";
+					var ca = document.cookie.split(';');
+					for(var i = 0; i < ca.length; i++) {
+						var c = ca[i].trim();
+						if (c.indexOf(name) == 0) 
+							return c.substring(name.length,c.length);
+					}	
+				}
+			}catch(e){}
+			return "";
+		}
+		var egid = getCookie("egid");
+		var eaid = getCookie("eaid");
+		
+		if(egid != ""){
+			scode = egid;
+			type = "cauly_egid";
+		}
+		if(eaid != ""){
+			scode = eaid;
+			type = "cauly_eaid";
+		}
+		window.addEventListener("message",function(e){
+			if( e.data.cauly_code == "script_param_url" ){
+				window.parent.postMessage({"cauly_code":"send_cauly_scode","scode":scode,"type":type}, e.data.script_param_url);
+			}
+		});
+	})();
+	
+</script></head><body marginwidth="0" marginheight="0"></body></html>

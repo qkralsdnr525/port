@@ -1,0 +1,342 @@
+
+<!-- saved from url=(0051)https://image.cauly.co.kr/script/caulytracker4.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><meta name="viewport" content="width=device-width">
+
+<script>
+
+function getCookie(key) {
+	try{
+		 var name = key + "=";
+		    var ca = document.cookie.split(';');
+		    for(var i = 0; i < ca.length; i++) {
+		        var c = ca[i].replace(/(^\s*)|(\s*$)/gi, "");
+		        if (c.indexOf(name) == 0) 
+		            return c.substring(name.length,c.length);
+		    }
+	} catch(e) {
+	    return false;
+	}
+    return "";
+};
+
+function getOsVersion(isAndroid, ua) {
+	if (isAndroid) {
+		return getAndroidVersion(ua);
+	} else {
+		return getiOSVersion(ua);
+	}
+};
+
+function getiOSVersion(ua) {
+    var match = ua.match(/OS\s([0-9\_]*)/);
+	if (match) {
+		return match[1].replace(/_/gi, "\.");
+	}
+    return "1.1.0";
+};
+
+function getAndroidVersion(ua) {
+    var ua = ua || navigator.userAgent; 
+    var match = ua.match(/Android\s([0-9\.]*)/);
+    return match ? match[1] : "1.1.0";
+};
+
+function getModel(ua) {
+	var match = ua.match(/\s([A-Za-z0-9\-_]*) Build/);
+	return match ? match[1] : "";
+};
+
+function getPlatformInfo() {
+	var options = {}
+	var b = navigator.userAgent;
+	var low = b.toLowerCase();
+	if ( low.indexOf('iphone') >= 0 || b.indexOf('ipod') >= 0 )  {
+		options.platform = "iPhone";
+		options.version = getOsVersion(false, b);
+		options.model = "";
+	} else if ( low.indexOf('ipad') >= 0 ) {
+		options.platform = "iPad"; 
+		options.version = getOsVersion(false, b);
+		options.model = "";
+	} else if ( low.indexOf('firefox') >= 0 || low.indexOf("opera") >= 0 )  {
+		options.platform = "Android"; 
+		options.version = "4.0.0";
+		options.model = "";
+	} else if ( low.indexOf('android') >= 0 )  {
+		options.platform = "Android"; 
+		options.version = getOsVersion(true, b);
+		options.model = getModel(b);
+	} else {
+		options.platform = "unknown"; 
+		options.version = "";
+		options.model = "";
+	}
+	return options;
+};
+
+function getCookieLocalstorage(key){
+	var cookieValue = getCookie(key);
+	var localstorageValue = getLocalData(key);
+	if(cookieValue){
+		return cookieValue;
+	}else if(localstorageValue){
+		return localstorageValue;
+	}
+	return "";
+};
+
+function setCookieLocalstorage(key, value, sec){
+	setCookie(key, value, sec);
+	setLocalData(key,value);
+};
+
+function setLocalData(key, value) {
+	try {
+		if ( !! window.localStorage){
+				localStorage.removeItem(key);
+				localStorage.setItem(key, value );
+		} else if (navigator.cookieEnabled) {
+			return setCookie(key, value);
+		}
+	} catch(e) {
+		try {setCookie(key, value);} catch(e){}
+		return true;
+	}
+	return false;
+};
+
+function getLocalData(key) {
+	try {
+		if ( !! window.localStorage){
+				return localStorage.getItem(key);
+		} else if (navigator.cookieEnabled) {
+			return getCookie(key);
+		}
+	} catch(e) {
+		try {return getCookie(key);	} catch(e){return '';	}
+	}
+	return '';
+};
+
+function setCookie(key, value) {
+	 try {
+	    if (navigator.cookieEnabled) {
+	        	 var d = new Date();
+	        	    d.setTime(d.getTime() + (100000*24*60*60*1000));
+	        	    var expires = "expires="+d.toUTCString()+";";
+	            document.cookie = key + "=" + value + ";path=/;domain=cauly.co.kr;"+expires;;
+	            return true;
+	    }
+	 } catch(e) {
+         return false;
+     }
+    return false;
+};
+
+function setCookieTime(key, value, sec) {
+	if (navigator.cookieEnabled) {
+		try {
+			if(!!sec)
+			{
+				var date = new Date();
+				date.setTime(date.getTime()+(sec*1000));
+				var expires = "; expires="+date.toGMTString();
+				document.cookie = key+"="+value+expires+";path=/;";
+			}
+			else
+			{
+				 var d = new Date();
+	        	 d.setTime(d.getTime() + (1000*24*60*60*1000));
+	        	 var expires = "expires="+d.toUTCString()+";";
+				 document.cookie = key + "=" + value + ";path=/;"+expires;
+			}
+			return true;
+		} catch(e) {
+			return false;
+		}
+	}
+	return false;
+};
+
+function postActionAfterCID(p)
+{
+	CID = getCookieLocalstorage("cid");
+	if(CID == "")
+		CID=p;
+	window.parent.postMessage("caulytracker_cid:"+CID,"*");
+	for(var i=0 ; i< msgQueue.length; i++)
+	{
+		sendTrackEvent(msgQueue[i])
+	}
+	msgQueue = [];
+}
+
+function get_json(jsonp,url,  callbackFuncName, callback){
+	try{
+	    window[jsonp] = function(data) {
+	        window[jsonp] = undefined;
+	        try {
+	            delete window[jsonp];
+	        } catch(e) {
+	        }
+	        callback(data);
+	    };
+	    var head 		= document.getElementsByTagName('head')[0];
+	    var script 		= document.createElement('script');
+	    script.charset 	= "UTF-8";
+	    script.src 		= url;
+	    script.onload= function()
+		{
+			head.removeChild(script);
+		}
+	    script.onerror=  function()
+		{
+		}
+	    head.appendChild(script);
+	    
+	}catch(e){
+		return false;
+	}
+    return true;
+};
+
+
+function createOrGetCID()
+{
+	var infos = getPlatformInfo();
+	var device_param = '?platform='+infos.platform+'&version='+infos.version+'&model='+infos.model
+	var prev =  getCookie("cid");
+	if(prev==null || ""== prev || 'undefined'== typeof prev)
+	{
+		var ran = Math.round(Math.random()*1000000000);
+		var jsonp_callback = "caulyjsonp_"+ran;
+		var src = location.protocol+"//app.cauly.co.kr/crcode"+device_param+'&callback='+jsonp_callback+'&content_type=jsonp';
+		get_json(jsonp_callback, src, 'callback', function(res) {
+			var p = res.cid; 
+			// setCookieLocalstorage("cid",p);
+			postActionAfterCID(p);
+		});	
+	} 
+	else
+	{
+		window.parent.postMessage("caulytracker_cid:"+prev,"*");
+		return prev;
+	}
+}
+
+function isEmpty(d)
+{
+	if(d==null || ""== d || 'undefined'== typeof d)
+		return true;
+	return false;
+}
+function jsonToHttpParam(data)
+{
+	var passData='&';
+	try
+	{
+		if(!!data && !isEmpty(data['track_code']))
+		{
+			if( document.referrer.indexOf('cauly_rt_code') >0)
+			{
+				setCookieLocalstorage('cauly_ltime-'+data['track_code'], Date.now());
+			}
+			else
+			{
+				var cauly_landing_time = getCookieLocalstorage('cauly_ltime-'+data['track_code']);
+				if(typeof cauly_landing_time !='undefined' && !isNaN(cauly_landing_time)){
+					var prev_time = Number(cauly_landing_time);
+					if(prev_time>0)
+					{
+						var landingTime = Date.now();
+						data['param_2']= 'conv_sec:'+parseInt((landingTime-prev_time)/1000);
+					}
+				}
+			}
+		}
+		if(!!data && !isEmpty(data['track_code']) && !isEmpty(data['param_1']) )
+		{
+			setCookieTime(data['track_code'],data['param_1'],60000 );
+		}
+		else
+		{
+			if(getCookieLocalstorage(data['track_code']).length>2)
+				passData =passData+'param_1='+ getCookieLocalstorage(data['track_code'])+'&';
+		}
+	}
+	catch (e) {
+	}
+	
+	for(var t in data)
+		passData= passData+t+'='+encodeURIComponent(data[t])+'&'
+		
+	return passData;
+}
+
+function sendTrackEvent(data)
+{
+	var infos = getPlatformInfo();
+	var src = [ ad_base_url, url_path ,"?sdk_type=web&lang=ko"
+				, "&version=", infos.version
+				, "&platform=" , infos.platform
+				, "&model=" , infos.model
+				, "&scode=", CID
+				, data
+				].join("");
+			
+	var head = document.getElementsByTagName("head")[0] 
+	var script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.src = src;
+	script.charset = 'UTF-8';
+	script.onerror=  function()
+	{
+		
+	}
+	head.appendChild(script);
+}
+function getUrlPath(passData)
+{
+	if(passData.indexOf('&order_id=')>=0 && passData.indexOf('&order_price=')>=0&& passData.indexOf('&pruduct_infos=')>=0)
+	{
+		return '/purchase';
+	}
+	return	'/event';
+}
+var ad_base_url =location.protocol+'//tracker.cauly.co.kr'
+var url_path ='/event'
+var msgQueue = new Array();
+var CID =  createOrGetCID();
+window.onmessage = function(e){
+	try{
+		if(e.data!=null )
+		{
+			if(e.data!=null  && e.data.indexOf('cauly_dev_mode')>=0)
+			{
+				ad_base_url = location.protocol+'//';
+			}
+			else 
+			{
+				var data = e.data[0];
+				var passData=jsonToHttpParam(data)
+				passData= passData+'unique_app_id='+ encodeURIComponent(e.origin);
+				url_path =getUrlPath(passData)
+				
+				if(CID!=null)
+				{
+					sendTrackEvent(passData);
+				}
+				else
+				{
+					msgQueue.push(passData)
+				}
+			}
+		}
+	}catch(e){
+	}
+}
+</script>
+<script type="text/javascript" src="./event(1)" charset="UTF-8"></script></head>
+<body>
+
+</body></html>

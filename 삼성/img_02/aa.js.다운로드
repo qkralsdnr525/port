@@ -1,0 +1,22 @@
+
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><title>500</title><style>html, body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 56px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.center {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin: 0;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}</style></head><body><div class="center"> <h1>500</h1></div></body></html>

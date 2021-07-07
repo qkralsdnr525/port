@@ -1,0 +1,31 @@
+<svg id="ic_SamsungFlow_32px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="사각형_1709" data-name="사각형 1709" width="32" height="32" fill="#f2f2f2" opacity="0"/>
+  <g id="그룹_2711" data-name="그룹 2711" transform="translate(1 4)">
+    <path id="패스_1350" data-name="패스 1350" d="M299.669,19.3H281V4.1h25.333V8.57" transform="translate(-281 -4.097)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="선_463" data-name="선 463" y2="2.841" transform="translate(12.667 15.43)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="선_464" data-name="선 464" x2="13.506" transform="translate(5.067 18.264)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <path id="패스_1351" data-name="패스 1351" d="M299.667,17.147V27.9H311V8.569H299.667V10.72" transform="translate(-281 -4.097)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <line id="선_465" data-name="선 465" x2="2.776" transform="translate(22.945 21.505)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+    <g id="그룹_2710" data-name="그룹 2710" transform="translate(11.445 7.6)">
+      <line id="선_466" data-name="선 466" x2="8.319" transform="translate(0.251 2.234)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+      <g id="그룹_2705" data-name="그룹 2705" transform="translate(6.492)">
+        <g id="그룹_2704" data-name="그룹 2704">
+          <g id="그룹_2703" data-name="그룹 2703">
+            <g id="그룹_2702" data-name="그룹 2702">
+              <path id="패스_1352" data-name="패스 1352" d="M298.938,11.7l2.237,2.234-2.237,2.233" transform="translate(-298.938 -11.697)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="그룹_2709" data-name="그룹 2709" transform="translate(0 0.001)">
+        <g id="그룹_2708" data-name="그룹 2708">
+          <g id="그룹_2707" data-name="그룹 2707">
+            <g id="그룹_2706" data-name="그룹 2706">
+              <path id="패스_1353" data-name="패스 1353" d="M294.682,16.165l-2.237-2.233,2.237-2.233" transform="translate(-292.445 -11.699)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

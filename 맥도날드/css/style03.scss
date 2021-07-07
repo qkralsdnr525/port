@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+body{margin: 0; padding: 0;}
+$red: #fe0000;
+$yellow: #ffd000;
+$bkgreen: #1e3829;
+$white: #fff;
+$gray: #222222;
+$black: #000;
+$wgray:#808080;
+$fs50:50px;
+$fs40:40px;
+$fs20:20px;
+$fs18:18px;
+$fs15:15px;
+$fs13:13px;
+$pd15:5px 15px;
+
+.container{width:1170px; height: inherit; background: grba(0,0,0,.4); margin: 0 auto;}
+
+#header{width:100%; height: 140px; text-align: center; border-bottom: 1px solid $wgray; box-sizing: border-box; background: $white;position: fixed; top: 0; left: 0; right: 0;
+    .logo{
+        float: left; margin-top: 25px;
+    }
+    .menu-top > li{
+         float: left;  margin-right: 85px; position: relative; left: 5%; margin-top: 50px;
+         &:hover{border-bottom: 4px solid $yellow;}
+        >a{font-size: $fs20; font-weight: bold;
+        }
+        >ul{
+            width:152px; height: 300px; position: absolute; left:12%; top:100px; text-align: left; z-index: 0;
+            >li{
+                margin-bottom: 30px; font-size: $fs16; display: none;
+            a{
+                color:$wgray;
+                    &:hover{color:$black; text-decoration: underline;}
+                } 
+            }
+        }
+    }
+    .right-menu > li{
+        float:left; margin-top: 50px; margin-right: 15px; position: relative; left: 5%; 
+        .red{border: 1px solid $red; font-size: $fs13; background: $red; padding: $pd15; border-radius: 15px;}
+        .yellow{border: 1px solid $yellow; font-size: $fs13; background: $yellow;  padding: $pd15; border-radius: 15px;}
+        .green{border: 1px solid $bkgreen; font-size: $fs13; background: $bkgreen;  padding: 5px 25px; border-radius: 15px;}
+        >a{color:$white;}
+    }
+    .search{position: relative; left: -8px; top:40px}
+}
+#content01{background-image: url(../img/bg_visual_store01.jpg);width:1920px; height: 250px; margin-top:120px;
+    .top-content{ padding: 69px;
+        h1{font-size: $fs50; font-weight: bold; color:$white; position: relative; left: -60px;top:40px}
+        li{margin: 30px 40px 0 0; position: relative; left: -55px; top:30px;
+            a{color:$white;}
+        }
+        li:nth-child(2):before {
+            content: "• ";
+            color: orange; /* or whatever color you prefer */
+        }
+        li:nth-child(3):before {
+            content: "• ";
+            color: orange; /* or whatever color you prefer */
+        }
+    }
+    .option_bar{
+        ul{float: left;}
+    }
+}
+input{padding:40px;}
+#content02{
+    .top_button{text-align: center;
+        >ul li{display: inline-block; background-color: #ffd000;}
+    }
+}
